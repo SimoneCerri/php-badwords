@@ -1,6 +1,6 @@
 <?php 
 
-include 'checkBad.php';
+include 'checkBad.php'; //need to include the external file for use it
 
 //checkBadWords();
 
@@ -47,7 +47,7 @@ include 'checkBad.php';
     <!-- <span><?php checkBadWords($censored, $paragraph) ?></span> -->
     <!-- <span><?php var_dump("have a bad word inside") ?></span> -->
     <!-- <span><?php var_dump(checkBadWords()) ?></span> -->
-    <span><?php checkBadWords() ?></span>
+    <span><?php checkBadWords() ?></span> <!-- use the function directly in php tag -->
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->
