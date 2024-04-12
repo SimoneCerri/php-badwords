@@ -1,5 +1,6 @@
 <?php 
 include 'checkBad.php';
+//var_dump("have a bad word inside")
 
 
 ?>
@@ -42,7 +43,9 @@ include 'checkBad.php';
    <div class="form_content">
     <p>Your paragraph: <?php echo $paragraph ?></p>
     <span>Your censored word: <?php echo $censored ?></span>
-    <span><?php checkBadWords($censored, $paragraph) ?></span>
+    <!-- <span><?php checkBadWords($censored, $paragraph) ?></span> -->
+    <!-- <span><?php var_dump("have a bad word inside") ?></span> -->
+    <!-- <span><?php var_dump(checkBadWords()) ?></span> -->
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->
