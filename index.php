@@ -42,6 +42,7 @@ include 'checkBad.php';
    <div class="form_content">
     <p>Your paragraph: <?php echo $paragraph ?></p>
     <span>Your censored word: <?php echo $censored ?></span>
+    <span><?php checkBadWords($censored, $paragraph) ?></span>
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->
