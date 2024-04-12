@@ -1,8 +1,7 @@
 <?php 
+
 include 'checkBad.php';
-//var_dump("have a bad word inside")
-$paragraph;
-$censored;
+
 checkBadWords();
 
 ?>

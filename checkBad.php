@@ -4,14 +4,16 @@ function checkBadWords()
 {
     $paragraph = $_GET["paragraph"];
     $censored = $_GET["censored"];
+    /* $newParagraph; */
 
     if(strpos($paragraph,$censored) !== false)
     {
-        echo "Presente ".strpos($paragraph,$censored);
+        $newParagraph = str_replace($censored, "***",$paragraph);
+        echo $newParagraph;
     }
     else
     {
-        echo "Nope";
+        echo "There is no: " .$censored ." word in paragraph: ".$paragraph;
     }
 
     /* return $paragraph; */
