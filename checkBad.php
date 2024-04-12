@@ -1,17 +1,25 @@
 <?php 
-$paragraph = $_GET["paragraph"];
-$censored = $_GET["censored"];
-//$find = false;
+
+
+$find = false;
 //var_dump("have a bad word inside");
 
 function checkBadWords()
 {
-    if(strpos($censored, $paragraph))
+    echo "ciao";
+    $paragraph = $_GET["paragraph"];
+    $censored = $_GET["censored"];
+    
+    if(strpos($paragraph,$censored))
     {
-        var_dump("have a bad word inside");
-        $find = true;
+        //var_dump("have a bad word inside");
+        //$find = true;
         echo "Presente";
-    };
+    }
+    else
+    {
+        echo "Nope";
+    }
 };
 
 ?>
