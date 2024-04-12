@@ -2,9 +2,8 @@
 
 function checkBadWords()
 {
-    $paragraph = $_GET["paragraph"];
-    $censored = $_GET["censored"];
-    /* $newParagraph; */
+    $paragraph = strtolower($_GET["paragraph"]);
+    $censored = strtolower($_GET["censored"]);
 
     if(strpos($paragraph,$censored) !== false)
     {
@@ -15,8 +14,6 @@ function checkBadWords()
     {
         echo "There is no: " .$censored ." word in paragraph: ".$paragraph;
     }
-
-    /* return $paragraph; */
 };
 
 ?>

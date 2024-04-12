@@ -47,6 +47,7 @@ checkBadWords();
     <!-- <span><?php checkBadWords($censored, $paragraph) ?></span> -->
     <!-- <span><?php var_dump("have a bad word inside") ?></span> -->
     <!-- <span><?php var_dump(checkBadWords()) ?></span> -->
+    <span><?php checkBadWords() ?></span>
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->
