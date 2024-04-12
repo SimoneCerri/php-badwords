@@ -2,7 +2,7 @@
 
 include 'checkBad.php';
 
-checkBadWords();
+//checkBadWords();
 
 ?>
 

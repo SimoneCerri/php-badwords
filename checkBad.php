@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+$paragraph;
+$censored;
 
 function checkBadWords()
 {
@@ -8,12 +11,16 @@ function checkBadWords()
     if(strpos($paragraph,$censored) !== false)
     {
         $newParagraph = str_replace($censored, "***",$paragraph);
-        echo $newParagraph;
+        echo "New paragraph: " .$newParagraph;
     }
     else
     {
         echo "There is no: " .$censored ." word in paragraph: ".$paragraph;
     }
+
+    //return array($paragraph,$censored);
+    //var_dump(array);
 };
+
 
 ?>
